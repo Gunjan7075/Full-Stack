@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sun{
+            border:0px solid rgb(255, 81, 0);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top:200px;
+            left: 550px;
+            background-color: rgb(255, 81, 0);
+            box-shadow: 0 0 75px rgb(255, 81, 0);
+        }
+        .earth{
+            position:relative;
+            top: 70px;
+            left:70px;
+            /* border: 0px solid skyblue;
+            width: 100px;
+            height: 100px;
+            background-image: url(earth.png);
+            background-color:blueviolet;
+            border-radius: 50%; */
+            animation: earth-re 7s  linear infinite;
+        }
+        img{
+            width: 120px;
+            height: 120px;
+        }
+        .moon{
+            position:absolute;
+            top: 20px;
+            left: 20px;
+            border: 0px solid rgb(255, 255, 255);
+            width: 45px;
+            height: 45px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            animation: moon-re 3.5s linear infinite ;
+        }
+        .cont{
+            height: 700px;
+            width: 1500px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            background-image: url("images.jpg");
+            background-repeat: no-repeat;
+            background-size: 1500px;
+        }
+        @keyframes earth-re{
+            from{
+                transform: rotate(0deg) translateX(220px) rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg) translateX(220px) rotate(-360deg);
+            }
+        }
+        @keyframes moon-re{
+            from{
+                transform: rotate(0deg) translateX(75px) rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg) translateX(75px) rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+       <div class="sun">
+        <div class="earth">
+            <img src="earth.png" alt="">
+            <div class="moon"></div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

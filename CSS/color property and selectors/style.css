@@ -1,0 +1,42 @@
+/* universal selector */
+*{
+    color:black;
+    background-image: url("Airplane.jpg");
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+/* element selector */
+h1{
+    color: pink;
+}
+/* start class selector */
+.maincont{
+    background-color:yellow;
+    /* background-color: rgb(255,0,0); *//*red */
+    /* background-color: rgb(255,255,0);*//*yellow */
+    /* background-color: #ffff00; *//*yellow*/
+}
+.container1{
+    color: green;
+    bottom: 2cm;
+    text-align: center;
+}
+
+/* or */
+
+/* div{
+    color: blue;
+} */
+
+.container1{
+    background-color:whitesmoke;
+    border: 3cm;
+    border-color:black;
+}
+/* end class selector */
+/* start Id selector */
+#myId{
+    background-color: white;
+    color: rgb(22, 22, 240);
+}
+/* end Id selecor */

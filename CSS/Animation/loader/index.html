@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:20px solid black;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border-top:20px solid yellow;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            /* animation:loader 2s ease-in 0s infinite normal; */
+            animation-name: loader;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes loader{
+            from{left: 0px;}
+            to{left: 400px;}
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
